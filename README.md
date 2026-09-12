@@ -46,4 +46,4 @@ These questions aren't here to slow you down — they're part of what's being ev
 
 ## Our Approach
 
-*[To be filled in by the team at the end.]*
+We built a Vercel-ready decision cockpit in `index.html`, `styles.css`, and `app.js`, supported by the business-facing EDA and KPI memo in `EDA_KPI_Business_Case.md`. The recommendation is an €2.19 pilot in Berlin and Munich, seeded through Gym & Office and DTC subscription in September, with October as the demand test and grocery expansion gated on repeat purchase and LTV:CAC. The frontend uses aggregated metrics and intentionally excludes the survey's name/email fields.
