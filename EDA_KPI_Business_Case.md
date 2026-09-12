@@ -31,9 +31,9 @@ The deliberate sacrifice is maximum first-order acceptance and maximum unit marg
 
 ## Launch operating plan
 
-1. **September:** build waitlist, creator seeding and Gym & Office sampling in Berlin/Munich. Keep the shelf price anchored at €2.19.
-2. **October–November:** run the 8-week pilot. Track KPIs by city × channel × segment; do not expose survey PII in the product or deployment.
-3. **December gate:** add selective grocery only if repeat is at least 30%, blended contribution is at least €0.90, and LTV:CAC reaches 3:1. Otherwise, fix the failing cell and extend the test.
+1. **September pre-peak:** build the waitlist, introduce the product through creators, and sample in Gym & Office in Berlin/Munich. The objective is taste and familiarity before the October demand peak, not peak-month education.
+2. **October conversion peak:** keep €2.19 visible and shift communication toward replenishment and repeat purchase. Track KPIs by city × channel × segment; do not expose survey PII in the product or deployment.
+3. **November scale gate:** expand only the cohorts that pass 30% repeat, €0.90 blended contribution and 3:1 LTV:CAC. Otherwise, fix the failing cell and extend the test.
 
 ## Data governance and limitations
 
