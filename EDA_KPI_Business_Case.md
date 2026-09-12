@@ -38,3 +38,7 @@ The deliberate sacrifice is maximum first-order acceptance and maximum unit marg
 ## Data governance and limitations
 
 The app uses aggregate metrics and qualitative quotes only. `customer_survey.csv` contains name/email-style fields, but these are intentionally excluded from the frontend and any derived output. No external API or API key is used. Results are directional because Germany has no LUMEN sales history; the pilot exists to replace survey intent with observed behavior.
+
+### Regional analysis note
+
+The dashboard now exposes all 16 German Bundesländer. The source data directly provides city-level signals for Berlin, Munich, Hamburg and Cologne plus an “Other Germany” aggregate; it does not provide observed state-level income or sales. Therefore the state cards are transparent modeled proxies: they combine the available city/region share and CAGR signals with an income-index assumption used only for prioritization. They should guide pilot sequencing, not be presented as measured regional demand. The first-wave recommendation remains Berlin and Bavaria/Munich, followed by Hamburg, Hesse/Frankfurt, Baden-Württemberg/Stuttgart and North Rhine-Westphalia after the repeat and LTV:CAC gates pass.

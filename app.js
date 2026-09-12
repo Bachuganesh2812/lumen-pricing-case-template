@@ -5,4 +5,22 @@ function update(p=+price.value){price.value=p;price2.value=p;let acceptance=p<1.
 price.addEventListener('input',()=>update());price2.addEventListener('input',e=>update(+e.target.value));mix.addEventListener('input',()=>update());update();
 $('#theme').addEventListener('click',()=>{document.body.classList.toggle('dark');$('#theme').textContent=document.body.classList.contains('dark')?'☀':'☾'});
 document.querySelectorAll('[data-match]').forEach(b=>b.addEventListener('click',()=>update(+b.dataset.match)));
-const regions={Berlin:'18% market share · 9% CAGR',Munich:'15% market share · 9% CAGR',Hamburg:'10% market share · 7% CAGR',Cologne:'9% market share · 7% CAGR'};document.querySelectorAll('.region').forEach(r=>r.addEventListener('click',()=>{$('.region.selected')?.classList.remove('selected');r.classList.add('selected');$('#regionInfo').textContent=r.dataset.region+' · '+regions[r.dataset.region]}));
+const regions={
+'Schleswig-Holstein':['3.2%','6%','€30.1k',61,'Build awareness through commuter and coastal wellness venues.'],
+'Mecklenburg-Vorpommern':['2.0%','5%','€27.4k',48,'Defer broad launch; test only through tourism and selective DTC.'],
+'Hamburg':['10%','7%','€36.8k',78,'Use as a high-income urban test with DTC and office partnerships.'],
+'Bremen':['2.1%','6%','€29.4k',54,'Use sampling to learn; keep distribution tightly targeted.'],
+'Lower Saxony':['9%','7%','€31.0k',68,'Prioritize Hanover and larger office clusters after Berlin proof.'],
+'Brandenburg':['4%','6%','€30.2k',58,'Treat as Berlin spillover; service from the Berlin pilot.'],
+'Berlin':['18%','9%','€31.2k',88,'Seed 20–30 workplaces and gym partners, then measure repeat by cohort.'],
+'North Rhine-Westphalia':['17%','7%','€32.4k',82,'Largest scale pool; enter after the beachhead proves repeat.'],
+'Saxony-Anhalt':['3%','6%','€28.3k',51,'Use grocery only after pricing and repeat gates pass nationally.'],
+'Saxony':['6%','7%','€29.1k',63,'Test Leipzig and Dresden with creator-led demand generation.'],
+'Thuringia':['3%','6%','€28.6k',50,'Maintain as a later-wave region; prioritize efficient DTC.'],
+'Hesse':['8%','7%','€35.1k',75,'Frankfurt office density supports Gym & Office and premium DTC.'],
+'Rhineland-Palatinate':['5%','6%','€31.0k',60,'Use regional retail partners after channel economics are validated.'],
+'Saarland':['2%','5%','€30.0k',46,'Do not prioritize in the first wave; keep digital-only coverage.'],
+'Bavaria':['15%','9%','€37.0k',86,'Munich is the second beachhead; pair premium positioning with DTC.'],
+'Baden-Württemberg':['11%','8%','€36.2k',80,'Strong income proxy; activate Stuttgart through performance communities.']};
+function showRegion(name){let d=regions[name]||regions.Berlin;document.querySelector('.region.selected')?.classList.remove('selected');document.querySelector(`[data-region="${name}"]`)?.classList.add('selected');$('#regionTitle').textContent=name;$('#regionTag').textContent=d[3]>=80?'priority beachhead':d[3]>=65?'second-wave candidate':'learn later';$('#regionScore').textContent=d[3];$('#regionShare').textContent=d[0];$('#regionCagr').textContent=d[1];$('#regionIncome').textContent=d[2];$('#regionHeadline').textContent=d[3]>=80?'High-priority market':d[3]>=65?'Scale candidate':'Learning market';$('#regionReason').textContent=`Modeled opportunity score ${d[3]}/100. This is a proxy view using market context, income index and city/region growth assumptions.`;$('#regionAction').textContent=d[4]}
+document.querySelectorAll('.region').forEach(r=>r.addEventListener('click',()=>showRegion(r.dataset.region)));showRegion('Berlin');
