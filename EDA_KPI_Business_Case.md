@@ -42,3 +42,5 @@ The app uses aggregate metrics and qualitative quotes only. `customer_survey.csv
 ### Regional analysis note
 
 The dashboard now exposes all 16 German Bundesländer. The source data directly provides city-level signals for Berlin, Munich, Hamburg and Cologne plus an “Other Germany” aggregate; it does not provide observed state-level income or sales. Therefore the state cards are transparent modeled proxies: they combine the available city/region share and CAGR signals with an income-index assumption used only for prioritization. They should guide pilot sequencing, not be presented as measured regional demand. The first-wave recommendation remains Berlin and Bavaria/Munich, followed by Hamburg, Hesse/Frankfurt, Baden-Württemberg/Stuttgart and North Rhine-Westphalia after the repeat and LTV:CAC gates pass.
+
+The frontend map uses a downloaded 16-feature Bundesländer GeoJSON boundary dataset (`germany-states.geojson`) rather than hand-drawn shapes. The reset button restores the recommended €2.19 price, 60% owned-channel mix, and Berlin selection.
