@@ -16,7 +16,7 @@
 - Default regional view is Germany-wide.
 - A state selection replaces the country panel with that state’s proxy metrics and action.
 - The map uses the 16-state GeoJSON boundary file; shapes are not hand-drawn.
-- The seasonality chart was replaced by the recommended September pre-peak seeding → October conversion → November scale plan.
+- The seasonality chart was replaced by the recommended September introductory-offer and onboarding → October conversion/replenishment → November scale plan.
 - Regional metrics are labeled as modeled proxies because the data room contains no German LUMEN sales data.
 
 ## Design and interaction

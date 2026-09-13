@@ -31,8 +31,8 @@ The deliberate sacrifice is maximum first-order acceptance and maximum unit marg
 
 ## Launch operating plan
 
-1. **September pre-peak:** build the waitlist, introduce the product through creators, and sample in Gym & Office in Berlin/Munich. The objective is taste and familiarity before the October demand peak, not peak-month education.
-2. **October conversion peak:** keep €2.19 visible and shift communication toward replenishment and repeat purchase. Track KPIs by city × channel × segment; do not expose survey PII in the product or deployment.
+1. **September pre-peak:** start introductory offers early, build the waitlist, introduce the product through creators, and sample in Gym & Office in Berlin/Munich. The objective is to have customers onboarded and familiar before the October demand peak, not to wait until peak month to create first trial.
+2. **October conversion peak:** taper broad introductory offers, keep €2.19 visible, and shift communication toward replenishment and repeat purchase. Track KPIs by city × channel × segment; do not expose survey PII in the product or deployment.
 3. **November scale gate:** expand only the cohorts that pass 30% repeat, €0.90 blended contribution and 3:1 LTV:CAC. Otherwise, fix the failing cell and extend the test.
 
 ## Data governance and limitations
